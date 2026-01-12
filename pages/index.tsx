@@ -205,7 +205,7 @@ export default function Home() {
                         : "bg-gray-100 text-gray-800 dark:bg-gray-900/30 dark:text-gray-400"
                     }`}
                   >
-                    {issue.status.replace("_", " ")}
+                    {String(issue.status).replaceAll("_", " ")}
                   </span>
                 </div>
               </Link>
